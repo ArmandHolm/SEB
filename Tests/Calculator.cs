@@ -135,7 +135,7 @@ namespace SEB.Tests
                 UI.WaitForPageToLoad(driver);
                 var obj = new CalculatorPageObject(driver);
                 obj.VerifyOnLandingPage(); // verifies that text matches the expected text on the landing page
-                for (int i = 0; i < 50; i++)
+                for (int i = 0; i < 5; i++)
                 {
                     var random = new Random();
                     obj.VerifySubtractionNegativeNumbers(random.Next(0, 999999999), random.Next(0, 999999999));
